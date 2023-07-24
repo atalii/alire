@@ -27,6 +27,7 @@ with Alr.Commands.Config;
 with Alr.Commands.Dev;
 with Alr.Commands.Edit;
 with Alr.Commands.Exec;
+with Alr.Commands.Fetch;
 with Alr.Commands.Get;
 with Alr.Commands.Index;
 with Alr.Commands.Init;
@@ -600,6 +601,7 @@ begin
    Sub_Cmd.Register ("Crate", new Clean.Command);
    Sub_Cmd.Register ("Crate", new Edit.Command);
    Sub_Cmd.Register ("Crate", new Exec.Command);
+   Sub_Cmd.Register ("Crate", new Fetch.Command);
    Sub_Cmd.Register ("Crate", new Init.Command);
    Sub_Cmd.Register ("Crate", new Pin.Command);
    Sub_Cmd.Register ("Crate", new Printenv.Command);
